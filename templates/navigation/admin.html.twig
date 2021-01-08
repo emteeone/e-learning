@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello NavigationController!{% endblock %}
+
+{% block body %}
+ <h1>Admin</h1>
+ {% if app.user %}
+ <div class="mb-3">
+     You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Deconnecter</a>
+ </div>
+{% endif %}
+</div>
+{% endblock %}
